@@ -4,12 +4,12 @@ public class Check {
 
     public boolean mono(boolean[] data) {
         boolean result = false;
-        int count = 0;
-        for (boolean datum : data) {
-            if (datum) {
-                count++;
+        int counterOfTrue = 0;
+        for (boolean dataCheckOfTrue : data) {
+            if (dataCheckOfTrue) {
+                counterOfTrue++;
             }
-            if (count == data.length || count == 0) {
+            if (counterOfTrue == data.length || counterOfTrue == 0) {
                 result = true;
             }
         }
